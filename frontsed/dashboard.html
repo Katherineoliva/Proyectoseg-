@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Dashboard</h2>
+        <!-- Botón para superadmin -->
+<button id="view-users-button" class="btn btn-info" style="display: none;">
+    Ver Usuarios
+</button>
+
+        <p>Bienvenido al panel de administración.</p>
+        <h3>Agregar Producto</h3>
+<form id="create-product-form">
+    <div class="form-group">
+        <label for="product-name">Nombre</label>
+        <input type="text" class="form-control" id="product-name" required>
+    </div>
+    <div class="form-group">
+        <label for="product-price">Precio</label>
+        <input type="number" class="form-control" id="product-price" required>
+    </div>
+    <div class="form-group">
+        <label for="product-image">Imagen</label>
+        <input type="text" class="form-control" id="product-image" required>
+    </div>
+    <button type="submit" class="btn btn-success">Crear Producto</button>
+</form>
+
+        <div id="product-list"></div> <!-- Aquí se mostrarán los productos -->
+        <!-- Formulario para crear producto -->
+
+
+        <button id="logout" class="btn btn-danger mt-3">Cerrar sesión</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
